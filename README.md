@@ -1,2 +1,8 @@
 # kali-build
-test
+
+## New Build - Intial Setup Steps
+
+
+## Additional Installs
+gobuster
+seclists
