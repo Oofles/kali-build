@@ -28,6 +28,8 @@ git clone https://github.com/Oofles/kali-build.git
 # Optional: Authenticate to GitHub:
 sudo apt install -y gh
 gh auth login
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
 ```
 
 4. Install additional packages:
@@ -36,6 +38,7 @@ sudo apt install -y gobuster seclists
 ```
 
 5. Firefox extensions:
+
     a. HackTools: https://addons.mozilla.org/en-US/firefox/addon/hacktools/
     b. FoxyProxy: https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
 
