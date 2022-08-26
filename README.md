@@ -4,25 +4,42 @@ Eventually Kali becomes a bit bloated and needs to be reimaged to continue funct
 ## New Build - Intial Setup Steps
 1. Update/Upgrade:
 ```bash
-sudo apt update
-sudo apt upgrade
+sudo apt update && sudo apt upgrade
+sudo apt dist-upgrade
 ```
 
-2. Clone this repo:
+2. Enable RDP and SSH:
 ```bash
-git clone https://github.com/Oofles/kali-build.git
+# RDP
+sudo apt install -y xrdp
+sudo systemctl enable xrdp
+sudo systemctl start xrdp
+
+# SSH
+sudo systemctl enable ssh
+sudo systemctl start ssh
 ```
 
-3. Install additional packages:
+3. GitHub Setup:
+```bash
+# Clone this repo:
+git clone https://github.com/Oofles/kali-build.git
+
+# Optional: Authenticate to GitHub:
+sudo apt install -y gh
+gh auth login
+```
+
+4. Install additional packages:
 ```bash
 sudo apt install -y gobuster seclists
 ```
 
-4. Firefox extensions:
+5. Firefox extensions:
     a. HackTools: https://addons.mozilla.org/en-US/firefox/addon/hacktools/
     b. FoxyProxy: https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
 
-5. Configure FoxyProxy (Settings):
+6. Configure FoxyProxy (Settings):
 - Title: Burp
 - Proxy Type: HTTP
 - Proxy IP: 127.0.0.1
