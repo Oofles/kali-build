@@ -1,0 +1,3 @@
+python-whois
+python3-nmap
+typer
