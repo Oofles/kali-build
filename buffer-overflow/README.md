@@ -11,13 +11,13 @@ Using the `bof-complete.py` script. This is used as a general reference flow as 
 ### Part 2 - Control the EIP
 1. `msf-pattern_create -l 300` (Change this size to whatever the buffer was on crash)
 2. Save pattern in "buff" variable and re-run
-3. In Immunity Debugger, see what value was writted in EIP
+3. In Immunity Debugger, see what value was written in EIP
 
 ### Part 3 - Set the offset
 
 1. Find the offset: `msf-pattern_offset -l 300 -q 316A4130` (Example: 272)
-2. Shorten the buffer, make EIP = "B", and make an offset ("C") 
-3. Run again with new script and make sure EIP is writted as B (42424242)
+2. Shorten the buffer, make EIP = "B", and make an offset ("C")
+3. Run again with new script and make sure EIP is written as B (42424242)
 
 ### Part 4 - Expand the Stack (Make room for shellcode)
 

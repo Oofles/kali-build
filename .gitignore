@@ -1,0 +1,27 @@
+# CTF Script Output Files
+target.txt
+self.txt
+nmap-quick
+nmap-full
+gobuster-*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+.venv
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
